@@ -82,6 +82,6 @@ backend backend
     balance     source
     hash-type   consistent
     {% for server in servers %}
-    server {{ server.name }} {{ server.ip }}:{{ server.port }}
+    server {{ server.name }} {{ server.ip }}:{{ server.port }} check
     {% endfor %}
 {% endif %}
